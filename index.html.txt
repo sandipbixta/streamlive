@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Sports Streaming</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.20.3/video-js.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Live Sports Streaming</h1>
+    <video id="liveStream" class="video-js vjs-default-skin" controls autoplay width="640" height="360">
+        <source src="https://bit.ly/ddy-m3u1all" type="application/x-mpegURL">
+    </video>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.20.3/video.min.js"></script>
+    <script>
+        var player = videojs('liveStream');
+        player.play();
+    </script>
+</body>
+</html>
